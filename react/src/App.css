@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+   --text-main: #eaeaea;     /* primary text */
+  --text-muted: #b5b5b5;    /* secondary text */
+  --text-subtle: #8f8f8f;   /* labels */
+  --accent: #0d6efd;        /* Bootstrap primary blue */
 }
-
-

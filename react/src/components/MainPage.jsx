@@ -1,19 +1,25 @@
 const MainPage = () => {
   return (
     <>
-        <h1>
-            Hi, I'm Anton Panasiuk!
-        </h1>
+      <section className="py-5 mt-4 d-flex flex-column align-items-center text-center">
+            <h1 className="display-5 fw-bold mb-3 hero-title">
+              Hi, I'm Anton Panasiuk!
+            </h1>
 
-        <h2>
-            Frontend developer in progress. Passionate about creating clean and responsive websites.
-        </h2>
+           <hr className="opacity-25 my-5 col-md-8 col-4" /> 
 
-        <div>
-            I’m a beginner web developer currently studying HTML, CSS, and the fundamentals of programming.
-            I enjoy learning how websites work and bringing my ideas to life through code.
-            My goal is to become a full-stack developer and create projects that make people’s lives easier.
-        </div>
+          <h2 className="fs-4 fw-light mb-4">
+            Frontend Developer • JavaScript & React
+          </h2>
+
+          <div className="lead col-md-8">
+              I’m a frontend developer focused on building responsive and user-friendly web applications.
+              I work with JavaScript and React, and I enjoy turning ideas into clean, functional interfaces.
+              My goal is to grow into a full-stack developer and build products that solve real problems.
+          </div>
+          <hr className="opacity-25 my-5 col-md-8 col-4" /> 
+      </section>
+      
     </>
   )
 }
