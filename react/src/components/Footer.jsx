@@ -21,14 +21,23 @@ const Footer = () => {
               <a
                 className="btn btn-social-icon btn-instagram"
                 href="https://www.instagram.com/anton.panasiuk/?hl=en"
+                target="_blank"
               >
                 <i className="fa fa-instagram" />
               </a>
               <a
                 className="btn btn-social-icon btn-github"
                 href="https://github.com/Tort1k00"
+                target="_blank"
               >
                 <i className="fa fa-github" />
+              </a>
+              <a
+                className="btn btn-social-icon btn-linkedin"
+                href="https://www.linkedin.com/in/anton-panasiuk-3956603b4/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin" />
               </a>
             </div>
           </Col>

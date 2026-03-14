@@ -62,11 +62,39 @@ section .fs-4 {
 
 .hero-title:hover {
   text-shadow: 0 10px 30px rgba(2,6,23,0.7), 0 2px 0 rgba(0,0,0,0.6);
-  transform: translateY(-1px);
+  transform: translateY(-3px);
 }
+
+.hero-title-smaller {
+  color: var(--heading);
+  text-shadow: 0 6px 18px rgba(2,6,23,0.65), 0 1px 0 rgba(0,0,0,0.6);
+  transition: text-shadow 180ms ease, transform 180ms ease;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .hero-title { transition: none; transform: none; }
 }
+
+.about-portrait {
+  float: right;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  margin-left:  3rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 768px) {
+  .about-portrait {
+    float: none;
+    shape-outside: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+}
+
 
 

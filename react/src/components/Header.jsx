@@ -25,6 +25,11 @@ const Header = () => {
               <i className='fa fa-info fa-lg' /> About
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink className='nav-link' to='/myProjects'>
+              <i class="fa fa-briefcase fa-lg" /> My Projects
+            </NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
