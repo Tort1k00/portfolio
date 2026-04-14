@@ -12,10 +12,11 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About</Link></li>
+              <li><Link to="/myProjects">My Projects</Link></li>
             </ul>
           </Col>
 
-          <Col xs="12" sm="3">
+          <Col className='mb-3' xs="12" sm="3">
             <h5>Social</h5>
             <div className="d-flex justify-content-center gap-2">
               <a
