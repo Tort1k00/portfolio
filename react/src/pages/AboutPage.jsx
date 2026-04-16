@@ -9,8 +9,7 @@ const AboutPage = () => {
       <div className="row align-items-center g-4 mb-5">
         <div className="col-8 col-lg-8 mx-auto">
           <img
-            src="../../src/assets/imagesmy-picture.png"
-            alt="Anton Panasiuk"
+            src="../../src/assets/images/my-picture.png"
             className="about-portrait"
             width={260}
             height={260}

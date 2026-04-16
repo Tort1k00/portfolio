@@ -6,17 +6,19 @@ import { useState } from 'react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
-
+  
   return (
     <Navbar color="dark" dark sticky="top" expand="md">
       <NavbarBrand className='ms-5' href="/">
         <h1 className="h5 m-0">Anton Panasiuk</h1>
       </NavbarBrand>
-      <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+      <NavbarToggler onClick={() => {
+        setMenuOpen(!menuOpen)}
+      }/>
       <Collapse isOpen={menuOpen} navbar>
-        <Nav className='ms-auto' navbar>
+        <Nav className={menuOpen ? 'ms-5' : 'ms-auto'} navbar>
           <NavItem>
-            <NavLink className='nav-link' to='/'>
+            <NavLink  className='nav-link' to='/'>
               <i className='fa fa-home fa-lg' /> Home
             </NavLink>
           </NavItem>

@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #0b1220; /* dark charcoal (not pure black) */
-  color: #f3f4f6; /* slightly off-white for better contrast on the new bg */
+  background-color: #0b1220; 
+  color: #f3f4f6;
   
 }
 
@@ -26,13 +26,11 @@ a{
   text-decoration: underline;
 }
 
-
-/* Section-specific colors and improved text contrast */
 :root {
-  --heading: #06b6d4;       /* high-contrast teal heading for dark background */
+  --heading: #06b6d4;       
   --section-bg: transparent;
-  --section-text: #f3f4f6;  /* primary readable body text on dark bg */
-  --section-muted: #9ca3af; /* softer muted paragraphs */
+  --section-text: #f3f4f6;  
+  --section-muted: #9ca3af;
 }
 
 section {
@@ -96,6 +94,8 @@ section .fs-4 {
   }
 }
 
+/* Carousel CSS */
+
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -110,5 +110,21 @@ section .fs-4 {
     z-index: 100;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  background-color: black; 
+  opacity: 1;
+}
+
+/* Carousel CSS End */
 
 

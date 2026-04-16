@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Carousel } from "react-bootstrap"
 
 const items = [
@@ -25,7 +24,7 @@ const CarouselComponent = () => {
   return (
     <div className="row row-content">
       <div className="col-8 mx-auto">
-        <Carousel interval={4000} pause="hover">
+        <Carousel interval={3000} pause="hover">
           {items.map((item) => (
             <Carousel.Item key={item.src}>
               <img className="d-block w-100" src={item.src} alt={item.altText} />
