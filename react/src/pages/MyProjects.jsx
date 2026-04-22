@@ -1,5 +1,4 @@
 import CarouselComponent from "../components/Carousel"
-import { Button } from "reactstrap"
 import { motion } from "framer-motion"
 
 const MyProjects = () => {
@@ -34,6 +33,14 @@ const MyProjects = () => {
           <div className="hero-title mt-5 mb-4" >
             <h2>Full-Stack Campground Management App (<span style={{ color: 'white' }}>Mobile Version</span>)</h2>
           </div>
+        </div>
+      </div>
+      <div className="row my-5 d-flex justify-content-center">
+        <div className="col-4 d-flex justify-content-center">
+           <img width={'300'} src="/src/assets/images/Nucamp-mobile-screenshot.png" alt="Nucamp mobile screenshot" />
+        </div>
+        <div className="col-4 d-flex justify-content-center">
+          <video width={'300'} autoPlay muted loop src="/src/assets/video/Nucamp-mobile-recording.mp4" />
         </div>
       </div>
 
