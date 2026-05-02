@@ -1,38 +1,31 @@
-.site-footer {
-    background-image: linear-gradient(rgb(33, 37, 43), #0b1220);
-    padding: 20px 0;
-    margin-top: 2rem;
-    
-}
-
-body {
-  background-color: #0b1220; 
-  color: #f3f4f6;
-  
-}
-
-a{
-  color: white;
-  text-decoration: none;
-}
-
-.site-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
+/*
+  ROOT & GLOBAL
+*/
 :root {
-  --heading: #06b6d4;       
+  --heading: #06b6d4;
   --section-bg: transparent;
-  --section-text: #f3f4f6;  
+  --section-text: #f3f4f6;
   --section-muted: #9ca3af;
 }
 
+body {
+  background-color: #0b1220;
+  color: var(--section-text);
+}
+
+a {
+  color: var(--section-text);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/*
+   SECTIONS
+*/
 section {
   color: var(--section-text);
 }
@@ -41,7 +34,7 @@ section h1,
 section h2 {
   color: var(--heading);
   font-weight: 700;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.6);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
 }
 
 section .lead,
@@ -51,29 +44,90 @@ section .fs-4 {
   line-height: 1.6;
 }
 
-/* Hero title shadow for MainPage */
+/*
+   HERO TITLES
+ */
 .hero-title {
   color: var(--heading);
-  text-shadow: 0 6px 18px rgba(2,6,23,0.65), 0 1px 0 rgba(0,0,0,0.6);
+  text-shadow: 0 6px 18px rgba(2, 6, 23, 0.65), 0 1px 0 rgba(0, 0, 0, 0.6);
   transition: text-shadow 180ms ease, transform 180ms ease;
 }
 
 .hero-title:hover {
-  text-shadow: 0 10px 30px rgba(2,6,23,0.7), 0 2px 0 rgba(0,0,0,0.6);
+  text-shadow: 0 10px 30px rgba(2, 6, 23, 0.7), 0 2px 0 rgba(0, 0, 0, 0.6);
   transform: translateY(-3px);
 }
 
 .hero-title-smaller {
   color: var(--heading);
-  text-shadow: 0 6px 18px rgba(2,6,23,0.65), 0 1px 0 rgba(0,0,0,0.6);
+  font-size: 1.4rem;
+  text-shadow: 0 6px 18px rgba(2, 6, 23, 0.65), 0 1px 0 rgba(0, 0, 0, 0.6);
   transition: text-shadow 180ms ease, transform 180ms ease;
 }
 
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-title { transition: none; transform: none; }
+.hero-title-smaller:hover {
+  text-shadow: 0 10px 30px rgba(2, 6, 23, 0.7), 0 2px 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero-title,
+  .hero-title-smaller {
+    transition: none;
+    transform: none;
+  }
+}
+
+/*
+  buttons
+*/
+a.btn-cyan {
+  background-color: var(--heading);
+  color: #042c40;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+
+a.btn-cyan:hover {
+  opacity: 0.85;
+  color: #042c40;
+}
+
+a.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--section-text);
+  transition: background 0.15s ease;
+}
+
+a.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--section-text);
+  opacity: 1;
+}
+
+/*
+   FOOTER
+*/
+.site-footer {
+  background-image: linear-gradient(rgb(33, 37, 43), #0b1220);
+  padding: 20px 0;
+  margin-top: 2rem;
+}
+
+.site-footer a {
+  color: var(--section-text);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--section-text);
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/*
+   PORTRAIT
+*/
 .about-portrait {
   float: right;
   width: 260px;
@@ -81,7 +135,7 @@ section .fs-4 {
   border-radius: 50%;
   object-fit: cover;
   shape-outside: circle(50%);
-  margin-left:  3rem;
+  margin-left: 3rem;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
@@ -94,20 +148,22 @@ section .fs-4 {
   }
 }
 
-/* Carousel CSS */
+/* 
+   CAROUSEL
+*/
+.carousel {
+  border: 2px solid #5637dd;
+}
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.carousel {
-    border: solid #5637dd;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
 }
 
 .carousel-control-prev-icon,
@@ -121,10 +177,6 @@ section .fs-4 {
 }
 
 .carousel-indicators .active {
-  background-color: black; 
+  background-color: black;
   opacity: 1;
 }
-
-/* Carousel CSS End */
-
-
