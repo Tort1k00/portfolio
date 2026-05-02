@@ -15,9 +15,7 @@ const AboutPage = () => {
             height={260}
           />
           <div className="hero-title-smaller fw-bold mb-1">My Journey</div>
-          <p className="mb-0">
             I was born in Ukraine and moved to the United States when I was 17 years old. Relocating to a new country at that age taught me resilience, adaptability, and the importance of pushing beyond my comfort zone — qualities that now shape the way I approach both life and software development.
-          </p>
         </div>
       </div>
       <div className="row mb-5 text-end">
