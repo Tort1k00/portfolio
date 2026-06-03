@@ -1,26 +1,17 @@
 import { Carousel } from "react-bootstrap"
-
+import nucampHome from "../assets/images/Nucamp-Home-Screenshot.png"
+import nucampDirectory from "../assets/images/Nucamp-Directory-Screenshot.png"
+import nucampAbout from "../assets/images/Nucamp-About-Screenshot.png"
+import nucampFavorites from "../assets/images/Nucamp-Favorites-Screenshot.png"
+ 
 const items = [
-  {
-    src: "/src/assets/images/Nucamp-Home-Screenshot.png",
-    altText: "Nucamp home page"
-  },
-  {
-    src: "/src/assets/images/Nucamp-Directory-Screenshot.png",
-    altText: "Nucamp campground directory"
-  },
-  {
-    src: "/src/assets/images/Nucamp-About-Screenshot.png",
-    altText: "About Nucamp"
-  },
-  {
-    src: "/src/assets/images/Nucamp-Favorites-Screenshot.png",
-    altText: "Favorites view"
-  }
+  { src: nucampHome, altText: "Nucamp home page" },
+  { src: nucampDirectory, altText: "Nucamp campground directory" },
+  { src: nucampAbout, altText: "About Nucamp" },
+  { src: nucampFavorites, altText: "Favorites view" },
 ]
-
+ 
 const CarouselComponent = () => {
-
   return (
     <div className="row row-content">
       <div className="col-8 mx-auto">
@@ -35,5 +26,5 @@ const CarouselComponent = () => {
     </div>
   )
 }
-
+ 
 export default CarouselComponent

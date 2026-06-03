@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import myPicture from "../assets/images/my-picture.png"
 
 const SectionNumber = ({ num, type }) => (
   <p style={{ fontFamily: "monospace", fontSize: "11px", color: "#06b6d4", letterSpacing: "0.1em", marginBottom: "0.4rem" }}>
@@ -64,7 +65,6 @@ const AboutPage = () => {
         zIndex: 0,
       }} />
 
-      {/* ── Header ── */}
       <div className="row">
         <div className="col-10 mx-auto">
           <p style={{ fontFamily: "monospace", fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", opacity: 0.5 }}>
@@ -87,13 +87,12 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* ── Section 01 — Portrait + Journey ── */}
       <div className="row mb-5">
         <div className="col-10 mx-auto">
           <div className="d-flex gap-5 align-items-start flex-wrap">
             <div style={{ flexShrink: 0 }}>
               <img
-                src="../../src/assets/images/my-picture.png"
+                src={myPicture}
                 alt="Portrait"
                 width={220}
                 height={220}
@@ -116,7 +115,6 @@ const AboutPage = () => {
 
       <hr className="opacity-25 my-5 col-md-10 col-8 mx-auto" />
 
-      {/* ── Sections 02–06 ── */}
       {sections.slice(1).map((s, i) => (
         <div key={s.num}>
           <motion.div

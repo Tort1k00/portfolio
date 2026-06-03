@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "bootstrap-social": "^5.1.1",
+    "firebase": "^12.14.0",
     "font-awesome": "^4.7.0",
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
